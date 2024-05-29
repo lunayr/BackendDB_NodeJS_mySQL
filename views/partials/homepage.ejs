@@ -1,0 +1,76 @@
+<% if(typeof homepage != 'undefined'){%>
+<h2>G Krav</h2>
+<ol class="content">
+  <li>
+    <a href="http://localhost:3000/">http://localhost:3000/</a> - homepage
+  </li>
+  <li>
+    <a href="http://localhost:3000/students/">/students</a>
+    - shows all students
+  </li>
+  <li>
+    <a href="http://localhost:3000/courses/">/courses</a>
+    - shows all courses
+  </li>
+  <li>
+    <a href="http://localhost:3000/associations/">/associations</a>
+    - shows the relation between courses and students
+  </li>
+  <li>
+    <a href="http://localhost:3000/students/jon">/students/jon</a>
+    - shows specific student by fname
+  </li>
+  <li>
+    <a href="http://localhost:3000/students/smith">/students/smith</a>
+    - shows specific student by lname
+  </li>
+  <li>
+    <a href="http://localhost:3000/students/2/courses">/students/2/courses</a>
+    - shows one specific student's courses by id
+  </li>
+  <li>
+    <a href="http://localhost:3000/students/john/courses"
+      >/students/john/courses</a
+    >
+    - shows courses for students by fname
+  </li>
+  <li>
+    <a href="http://localhost:3000/students/wick/courses"
+      >/students/wick/courses</a
+    >
+    - shows courses for students by lname
+  </li>
+  <li>
+    <a href="http://localhost:3000/courses/herbology/students"
+      >/courses/herbology/students</a
+    >
+    - shows one specific course and its students by course name
+  </li>
+  <li>
+    <a href="http://localhost:3000/courses/herbology">/courses/herbology</a>
+    - shows one specific course by course name
+  </li>
+  <li>
+    <a href="http://localhost:3000/courses/magical">/courses/magical</a>
+    - shows one specific course by specific word in description
+  </li>
+  <li>
+    <a href="http://localhost:3000/courses/2/students">/courses/2/students</a>
+    - shows one specific course and its students by id
+  </li>
+</ol>
+
+<h2>VG Krav</h2>
+<ol class="content">
+  <li>/students - create new student</li>
+  <li>/courses - create new course</li>
+  <li>/associations - create new association by student id and course id</li>
+  <li>/students/:student/edit - edit student by id</li>
+  <li>/courses/:course/edit - edit course by id</li>
+  <li>/associations/:association/edit - edit association by id</li>
+  <li>/students/:student/delete - delete student by id</li>
+  <li>/courses/:course/delete - delete course by id</li>
+  <li>/associations/:association/delete - delete association by id</li>
+</ol>
+
+<% } %>

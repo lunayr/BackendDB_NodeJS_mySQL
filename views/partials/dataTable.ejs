@@ -1,0 +1,29 @@
+<% if(typeof dbData != 'undefined'){%>
+
+<table class="w3-table w3-striped w3-bordered">
+  <thead>
+    <% Object.keys(dbData[0]).forEach( header => {%>
+    <th><%= header; %></th>
+    <% }); %>
+  </thead>
+  <tbody>
+    <% dbData.forEach( row => {%>
+
+    <tr>
+      <% Object.values(row).forEach( value => {%> <% if(value.text){%>
+      <td><a href="<%= value.link; %>"><%= value.text; %></a></td>
+      <% }else if(value.actions){ %>
+      <td>
+        <% Object.values(value.actions).forEach( action => {%>
+        <a href="<%= action.link; %>"><%= action.text; %></a>
+        <% }); %>
+      </td>
+      <% }else{ %>
+      <td><%= value; %></td>
+      <% } %> <% }); %>
+    </tr>
+    <% }); %>
+  </tbody>
+</table>
+
+<% } %>
