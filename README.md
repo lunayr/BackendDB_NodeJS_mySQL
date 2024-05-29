@@ -4,7 +4,7 @@
 npm install
 `
 
-To setup db:
+Setup db:
 
 `
 node setup.js
