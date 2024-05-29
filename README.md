@@ -1,6 +1,8 @@
 # gritacademyDatabase
 
-First setup the database.
+`
+npm install
+`
 
 To setup db:
 
