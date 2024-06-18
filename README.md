@@ -1,5 +1,9 @@
 The tools used for the project:
 - NODEjs
+- Body parser
+- ejs
+- express
+- mySQL2
 
 
 # gritacademyDatabase
