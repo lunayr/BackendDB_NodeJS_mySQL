@@ -1,4 +1,4 @@
-The libraries used for the project:
+The tools/libraries used for the project:
 - NODEjs
 - Body parser
 - ejs
