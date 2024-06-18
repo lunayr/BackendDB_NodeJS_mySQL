@@ -1,3 +1,7 @@
+The tools used for the project:
+- NODEjs
+
+
 # gritacademyDatabase
 
 `
